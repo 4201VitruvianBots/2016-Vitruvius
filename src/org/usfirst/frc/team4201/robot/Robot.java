@@ -8,6 +8,7 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
+import org.usfirst.frc.team4201.robot.commands.*;
 import org.usfirst.frc.team4201.robot.subsystems.*;
 
 /**
@@ -45,7 +46,7 @@ public class Robot extends IterativeRobot {
 		 *  I've commented them out for not, since I'm still figuring out how to work with 
 		 *  the Dashboard using Java.
 		 */
-		// chooser.addDefault("Default Auto", new ExampleCommand());
+		chooser.addDefault("Default Auto", new AutoDriveCommandGroup());
 		// chooser.addObject("My Auto", new MyAutoCommand());
 		// SmartDashboard.putData("Auto mode", chooser);
 		
