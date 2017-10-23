@@ -7,6 +7,7 @@ import com.ctre.CANTalon.TalonControlMode;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotDrive;
+import edu.wpi.first.wpilibj.RobotDrive.MotorType;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class DriveTrain extends Subsystem{
@@ -68,6 +69,11 @@ public class DriveTrain extends Subsystem{
 		leftMotors[1].clearStickyFaults();
 		rightMotors[0].clearStickyFaults();
 		rightMotors[1].clearStickyFaults();
+		
+		robotDrive.setInvertedMotor(MotorType.kFrontLeft, false);
+		robotDrive.setInvertedMotor(MotorType.kFrontRight, false);
+		robotDrive.setInvertedMotor(MotorType.kRearLeft, false);
+		robotDrive.setInvertedMotor(MotorType.kRearRight, false);
 		
 		robotDrive.tankDrive(leftJoystick, rightJoystick);
 	}

@@ -29,4 +29,12 @@ public class RobotMap {
 	public static final int driveTrainLeftFront = 10;
 	public static final int driveTrainLeftCenter = 11;
 	public static final int driveTrainLeftRear = 12;
+	
+	public static final int piBarOne = 4;
+	public static final int piBarTwo = 8;
+
+	public static final int PCMOne = 0;
+	public static final int PCMTwo = 21;
+	
+	public static final int puncher = 5;
 }
