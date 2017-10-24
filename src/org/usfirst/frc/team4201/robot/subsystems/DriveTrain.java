@@ -1,5 +1,6 @@
 package org.usfirst.frc.team4201.robot.subsystems;
 
+import org.usfirst.frc.team4201.robot.Robot;
 import org.usfirst.frc.team4201.robot.RobotMap;
 
 import com.ctre.CANTalon;
@@ -49,7 +50,7 @@ public class DriveTrain extends Subsystem{
 	
 	/** Function to initialize the drive motors so that values can be directly set to control them.
 	 */
-	public void setDrioveControlByPower() {
+	public void setDriveControlByPower() {
 		leftMotors[0].changeControlMode(TalonControlMode.PercentVbus);
 		leftMotors[1].changeControlMode(TalonControlMode.PercentVbus);
 		rightMotors[0].changeControlMode(TalonControlMode.PercentVbus);
@@ -88,6 +89,13 @@ public class DriveTrain extends Subsystem{
 	protected void initDefaultCommand() {
 		// TODO Auto-generated method stub
 		
+	
+	}
+
+	public void setLeftRightMotorOutputs(double i, double j) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
+

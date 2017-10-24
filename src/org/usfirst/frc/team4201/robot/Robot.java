@@ -24,7 +24,6 @@ public class Robot extends IterativeRobot {
 	*	before you can declare them
 	*/
 	public static DriveTrain driveTrain;
-	public static Arm arm;
 	public static OI oi;
 	
 	Command autonomousCommand;
@@ -39,7 +38,6 @@ public class Robot extends IterativeRobot {
 		/** Initialize subsystems here. They must all be initialized before OI, otherwise your code won't run.
 		 */
 		driveTrain =  new DriveTrain();
-		arm = new Arm();
 		oi = new OI();
 		
 		/** These lines are generally used to add Autonomous Routines to the Dashboard.
